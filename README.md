@@ -37,7 +37,7 @@
 - Eclipseを立ち上げる
 
 - 実験用ソースファイルを作る
- - プロジェクト名　"sample"
+   - プロジェクト名　"sample"
 
 - ソースファイルを作る
    - プロジェクト名　"todo"
@@ -50,30 +50,32 @@
     - "input number?"を出力する
       - System.out.println();
    - 数字（文字）をコンソールに入力する
-    - BufferedReaderを作る
-       - throws IOException
-     - ReadLine()で変数str（String）に入力値を格納する
+      - BufferedReaderを作る
+         - throws IOException
+       - ReadLine()で変数str（String）に入力値を格納する
 
 - 処理
     - strが数字であるかを判定する　checkString();
       - 変数result（boolean）を定義する
-       - 初期値はtrue
+       - 初期値はfalse
     - 正規表現のパターンを設定する
       - Pattern pattern >> "^[0-9]+$"
     - 入力値strが正規表現に一致するかを判定する
       - Matcher matcher >> patternにstrが一致するかを判定
       - 確認した結果を変数resultに格納する
           - matcherの結果をresultに格納
+              - 正規表現と一致>true
+              - 正規表現と不一致>false
 
 
 - 出力
    - 条件分岐
-   - result == true
-     - "入力された値は数字です"を出力する
-       - System.out.println();
-   - result == false
-     - "入力された値は数字ではありません"を出力する
-        - System.out.println();
+     - result == true
+       - "入力された値は数字です"を出力する
+         - System.out.println();
+     - result == false
+       - "入力された値は数字ではありません"を出力する
+          - System.out.println();
 
 - 動作確認
    - 全体を動かして確認

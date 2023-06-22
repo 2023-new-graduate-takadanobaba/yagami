@@ -72,7 +72,7 @@
        - System.out.println();
    - result == false
      - "入力された値は数字ではありません"を出力する
-      - System.out.println();
+        - System.out.println();
 
 - 動作確認
    - 全体を動かして確認

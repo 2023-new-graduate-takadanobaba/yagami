@@ -32,7 +32,7 @@
 -  入力された値は数字ではありません
 
 
-
+# todo
 - 仕様を読む
 - Eclipseを立ち上げる
 
@@ -56,9 +56,9 @@
     -
 
 - 処理
-  - strが数字であるかを判定する　checkString();
-    - 変数result（boolean）を定義する
-   - 初期値はtrue
+    - strが数字であるかを判定する　checkString();
+      - 変数result（boolean）を定義する
+       - 初期値はtrue
     - 正規表現のパターンを設定する
       - 
     - 入力値strが正規表現に一致するかを確認する

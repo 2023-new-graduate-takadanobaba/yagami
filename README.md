@@ -5,31 +5,31 @@
 
 - input number?
   - 1
-- 1 is a number
+- 入力された値は数字です
 
 - input number?
    - 100
-- 100 is a number
+- 入力された値は数字です
 
 - input number?
    - a
-- 数字ではありません
+- 入力された値は数字ではありません
 
 - input number?
    - !
-- 数字ではありません
+- 入力された値は数字ではありません
 
 - inout number?
    - 12345678901234567890
-- 12345678901234567890 is a number
+- 入力された値は数字です
 
 - input number?
    - 
-- input number?
+- 入力された値は数字ではありません
 
 - input number?
    - 123 234
--  数字ではありません
+-  入力された値は数字ではありません
 
 
 

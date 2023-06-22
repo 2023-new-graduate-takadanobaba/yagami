@@ -76,7 +76,7 @@ E --> Z
    - パッケージ名　"day1"
    - ファイル名　"question001.java"
       - main class
-      - メソッド　checkString()で文字列か数値化を判定（正規表現確認）
+      - メソッド　checkString()で文字列か数値かを判定（正規表現確認）
 
 - 入力
     - "input number?"を出力する

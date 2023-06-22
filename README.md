@@ -4,28 +4,28 @@
 ## ユーザーが入力した文字列を数字に変換する。ただし、ユーザーが入力した文字列が数字でない場合は、"数字ではありません"と表示する。
 
 - input number?
-  - 1
-- 入力された値は数字です
+  - 12345678901234567890
+- 12345678901234567890
 
 - input number?
-   - -10
-- 入力された値は数字です
-
-- inout number?
-   - 12345678901234567890
-- 入力された値は数字です
-
+   - -98765432
+- -98765432
+- 
 - input number?
-    - 0.1
-- 入力された値は数字です
+    - 76512.6783456789
+- 76512.6783456789
 
 - input number?
     - -100.05
-- 入力された値は数字です
+- -100.05
 
 - input number?
-    - 76512.6783456789
-- 入力された値は数字です
+    - 00.13768
+- 0.13768
+
+- input number?
+  - 345.4567810
+- 345.456781
 
 - input number?
    - a
@@ -83,11 +83,14 @@ E --> Z
       - 変数result（boolean）を定義する
        - 初期値はfalse
     - 正規表現のパターンを設定する
-      - Pattern patternInt >> "^[1-9]+[0-9]*$"
-      - Pattern patternDec1 >> "^[0]\.[0-9]*[1-9]$"
-      - Pattern patternDec2 >> "^[1-9][0-9]*\.[0-9]*[1-9]$"
+      - Pattern patternInt >> "^[0-9]+$"
+      - Pattern patternDec >> "^[0-9]+\.[0-9]+$"
     - 入力値strが正規表現に一致するかを判定する
-      - Matcher matcher >> patternにstrが一致するかを判定
+      - Matcher matcher >> strが正規表現に一致するかを判定
+          - 条件分岐
+              - patternInt
+                    - true >>break;
+                    - false >> patternDec
       - 確認した結果を変数resultに格納する
           - matcherの結果をresultに格納
               - 正規表現と一致>true
@@ -97,7 +100,7 @@ E --> Z
 - 出力
    - 条件分岐
      - result == true
-       - "入力された値は数字です"を出力する
+       - 入力された値を出力する
          - System.out.println();
      - result == false
        - "入力された値は数字ではありません"を出力する

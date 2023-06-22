@@ -36,7 +36,7 @@
 - 入力された値は数字ではありません
 
 - input number?
-   - 
+   -  
 - 入力された値は数字ではありません
 
 - input number?
@@ -83,7 +83,9 @@ E --> Z
       - 変数result（boolean）を定義する
        - 初期値はfalse
     - 正規表現のパターンを設定する
-      - Pattern pattern >> "^[0-9]+$"
+      - Pattern patternInt >> "^[0-9]+$"
+      - Pattern patternDec1 >> "^[0]\.[0-9]*[1-9]$"
+      - Pattern patternDec2 >> "^[1-9][0-9]*\.[0-9]*[1-9]$"
     - 入力値strが正規表現に一致するかを判定する
       - Matcher matcher >> patternにstrが一致するかを判定
       - 確認した結果を変数resultに格納する

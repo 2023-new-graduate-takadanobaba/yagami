@@ -59,8 +59,11 @@
       - 変数result（boolean）を定義する
        - 初期値はtrue
     - 正規表現のパターンを設定する
-    - 入力値strが正規表現に一致するかを確認する
+      - Pattern pattern >> "^[0-9]+$"
+    - 入力値strが正規表現に一致するかを判定する
+      - Matcher matcher >> patternにstrが一致するかを判定
       - 確認した結果を変数resultに格納する
+          - matcherの結果をresultに格納
 
 
 - 出力

@@ -53,14 +53,12 @@
     - BufferedReaderを作る
        - throws IOException
      - ReadLine()で変数str（String）に入力値を格納する
-    -
 
 - 処理
     - strが数字であるかを判定する　checkString();
       - 変数result（boolean）を定義する
        - 初期値はtrue
     - 正規表現のパターンを設定する
-      - 
     - 入力値strが正規表現に一致するかを確認する
       - 確認した結果を変数resultに格納する
 

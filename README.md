@@ -83,7 +83,7 @@ E --> Z
       - 変数result（boolean）を定義する
        - 初期値はfalse
     - 正規表現のパターンを設定する
-      - Pattern patternInt >> "^[0-9]+$"
+      - Pattern patternInt >> "^[1-9]+[0-9]*$"
       - Pattern patternDec1 >> "^[0]\.[0-9]*[1-9]$"
       - Pattern patternDec2 >> "^[1-9][0-9]*\.[0-9]*[1-9]$"
     - 入力値strが正規表現に一致するかを判定する

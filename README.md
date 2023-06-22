@@ -51,7 +51,7 @@
       - System.out.println();
    - 数字（文字）をコンソールに入力する
     - BufferedReaderを作る
-     - throws IOException
+       - throws IOException
      - ReadLine()で変数str（String）に入力値を格納する
     -
 

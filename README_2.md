@@ -27,8 +27,32 @@
   - end
 - "ありがとうございました"
 ## todo
-- ソースファイルを作る
+#### ソースファイルを作る
   - プロジェクト名　"todo"
   - パッケージ名　"day1"
   - ファイル名　"question001.java"
-    -main class
+      -main class
+#### 出力
+- "名前を入力してください"を出力
+    - println()
+
+#### 入力
+- 文字列をコンソールに入力する
+    - BufferedReader
+        - throws IOException
+    - ReadLine()で変数name（String）に入力値を格納
+
+#### 出力
+- "こんにちは、[name]さん"を出力
+    - [name]は変数nameの値を出力
+- "好きな食べ物をすべて入力してください。ないときは"end"と入力してください"を出力
+
+#### 繰り返し
+- ReadLine()で入力値を格納
+  - String型の配列favoriteに格納
+  - while文で入力を繰り返し
+  - "end"が入力されたら繰り返し終了
+
+#### 条件分岐
+
+#### 動作確認

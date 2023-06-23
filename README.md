@@ -76,7 +76,7 @@ E --> Z
    - パッケージ名　"day1"
    - ファイル名　"question001.java"
       - main class
-      - メソッド　checkString()で文字列か数値かを判定（正規表現確認）
+      - ~~メソッド　checkString()で文字列か数値かを判定（正規表現確認）~~
 
 - 入力
     - "input number?"を出力する
@@ -97,12 +97,15 @@ E --> Z
       - Matcher matcher >> strが正規表現に一致するかを判定
           - 条件分岐
               - patternInt
-                    - true >>break;
+                    - true >> Integer.parseIntで整数型の数値に変換
                     - false >> patternDec
+              - patternDec
+                    -true >> Double.parseDoubleで小数型の数値に変換
+                    - false >> break;
       - 確認した結果を変数resultに格納する
           - matcherの結果をresultに格納
-              - 正規表現と一致>true
-              - 正規表現と不一致>false
+              - 正規表現と一致 >> true
+              - 正規表現と不一致 >> false
 
 
 - 出力

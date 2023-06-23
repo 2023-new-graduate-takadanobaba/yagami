@@ -54,5 +54,20 @@
   - "end"が入力されたら繰り返し終了
 
 #### 条件分岐
+- favorite[0]が"end"だった場合
+  - "ありがとうございました"を出力
+- favorite[1]が"end"だった場合
+  - "[name]さんの好きな食べ物は[favorite[0]]ですね"を出力
+    - [name]は変数nameの値を出力
+    - [favorite[0]]は配列favorite[0]に格納された値を出力
+- それ以外
+  - favorite[] + "と、"
+    - 配列のインデックスの最大値 - 2　の値まで
+    - 拡張for文
+    - 変数outputFav（String）に文字連結
+  - "[name]さんの好きな食べ物は[outputFav][favorite[max-1]]ですね"を出力
+    - [name]は変数nameの値を出力
+    - [outputFav]は変数outputFavの値を出力
+    - favorite[max-1]は配列のインデックスの最大値 - 1に格納された値を出力
 
 #### 動作確認

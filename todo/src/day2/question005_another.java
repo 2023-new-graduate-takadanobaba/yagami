@@ -39,7 +39,7 @@ public class question005_another {
 		if (favorite.size() == 1) {
 			System.out.println("ありがとうございました");
 		} else if (favorite.size() == 2) {
-			System.out.println(name + "さんの好きな食べ物は" + favorite.get(1) +"ですね");
+			System.out.println(name + "さんの好きな食べ物は" + favorite.get(0) +"ですね");
 		} else {
 			System.out.println(name + "さんの好きな食べ物は" + outputFav +"ですね");
 		}
